@@ -1,0 +1,26 @@
+@import "@angular/material/theming";
+@include mat-core();
+/*
+$my-primay-color: mat-palette($mat-teal, 800);
+$my-accent-color: mat-palette($mat-light-green, 800);
+$my-theme: mat-light-theme($my-primay-color, $my-accent-color);
+@include angular-material-theme($my-theme);
+*/
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+mat-drawer {
+  width: 250px;
+}
+
+mat-drawer-container {
+  height: 100%;
+}
+
+mat-drawer-content {
+  padding: 20px;
+}
+
+

@@ -1,0 +1,40 @@
+/*
+@use "sass:map";
+@use '@angular/material' as mat;
+@include mat.core();
+
+$default-primay-color: mat.define-palette(mat.$teal-palette, 800);
+$default-accent-color: mat.define-palette(mat.$cyan-palette, 800);
+$default-accent-warn: mat.define-palette(mat.$red-palette);
+
+$default-theme: mat.define-light-theme(
+  (
+    color:(
+      primary: $default-primay-color,
+      accent: $default-accent-color,
+      warn: $default-accent-warn
+    ),
+  )
+);
+
+$prontuario-primay-color: mat.define-palette(mat.$amber-palette, 800);
+$prontuario-accent-color: mat.define-palette(mat.$orange-palette, 300);
+$prontuario-accent-warn: mat.define-palette(mat.$red-palette);
+
+$prontuario-theme: mat.define-light-theme(
+  (
+    color:(
+      primary: $prontuario-primay-color,
+      accent: $prontuario-accent-color,
+      warn: $prontuario-accent-warn
+    ),
+  )
+);
+.defaultTheme{
+  @include mat.all-component-themes($default-theme);
+}
+
+.prontuarioTheme{
+  @include mat.all-component-themes($prontuario-theme);
+}
+*/

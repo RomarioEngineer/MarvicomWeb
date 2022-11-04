@@ -1,0 +1,32 @@
+<mat-nav-list id="style-1">
+  <div class="profile-card">
+      <div class="header">
+          <h2>Marvicon</h2>
+          <h4>marvisur@gmail.com</h4>
+      </div>
+      <img src="../../../../assets/img/marvisur.png" alt="Soufiane FADIL">
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <h2 matSubheader>Pages</h2>
+
+  <mat-list-item routerLinkActive="list-item-active" routerLink="/">Dashboard</mat-list-item>
+  <mat-list-item routerLinkActive="list-item-active" routerLink="/posts">Operaciones de Almacén</mat-list-item>
+  <mat-list-item routerLinkActive="list-item-active" routerLink="/admin">Informes y Consultas</mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <h2 matSubheader>Tools</h2>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+      <mat-icon>import_contacts</mat-icon>
+      Contacts
+  </a>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+      <mat-icon>contact_phone</mat-icon>
+      Leads
+  </a>
+
+</mat-nav-list>
